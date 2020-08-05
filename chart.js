@@ -22,8 +22,8 @@ button.addEventListener('click', function (event){
     //     document.getElementById('container').classList.remove('hidden');
     // }
     if(numArray.length >= 5 && nameArray.length >= 5){
-        localStorage.setItem('Name: ', nameArray);
-        localStorage.setItem('Points: ', numArray);
+        localStorage.setItem('Name', nameArray);
+        localStorage.setItem('Points', numArray);
         linkRecieved.classList.add('linkOn');
         linkRecieved.classList.remove('linkOff');
     }
