@@ -2,6 +2,7 @@
 const nameRecieved = document.getElementById('nameTag');
 const numRecieved = document.getElementById('numTag');
 const button = document.getElementById('submitTag');
+let linkRecieved = document.getElementById('linkTag');
 
 // Array
 let nameArray = [];
@@ -23,5 +24,7 @@ button.addEventListener('click', function (event){
     if(numArray.length >= 5 && nameArray.length >= 5){
         localStorage.setItem('Name: ', nameArray);
         localStorage.setItem('Points: ', numArray);
+        linkRecieved.classList.add('linkOn');
+        linkRecieved.classList.remove('linkOff');
     }
 })
